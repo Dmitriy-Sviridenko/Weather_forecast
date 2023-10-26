@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="search-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Enter Location">
+      <button>
+        <img class="search-box__img" src="img/seacrh.svg" alt="">
+      </button>
+    </div>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    <div class="error_empty">
+      <p>Please Enter Your City</p>
+    </div>
+    <div class="weather">
+      <div class="weather-image">
+        <img class="weather__img" alt="">
+      </div>
+      <h1 class="temp"></h1>
+      <p class="weather_disc">123</p>
+      <h2 class="city">Berlin</h2>
+      <div class="details">
+        <div class="col">
+          <img class="humidity__img" src="img/humidity.svg" alt="">
+          <div>
+            <p class="humidity"></p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img class="wind__img" src="img/Wind.svg" alt="">
+          <div>
+            <p class="wind"></p>
+            <p>Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

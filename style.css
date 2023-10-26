@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #06283d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato sans-serif";
+}
+
+.container {
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: height 0.2s ease;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #06283d;
+  position: relative;
+}
+
+.search-box input {
+  color: #06283d;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 32px;
+}
+
+.search-box input::placeholder{
+  color: #06283d;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #06283d;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.search-box button:hover{
+  background-color: #0b4569;
+}
+
+.search-box__img {
+  padding-top: 3px;
+  width: 30px;
+  height: 35px;
+}
+
+.fa-location-dot {
+  position: absolute;
+  color: #06283d;
+  font-size: 28px;
+}
+
+.weather {
+  margin-top: 15px;
+  text-align: center;
+  opacity: 0;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 700; 
+  color: #044974;
+}
+
+.weather h2 {
+  font-size: 55px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.weather_disc {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details p {
+  font-size: 28px;
+}
+
+.weather__img {
+  width: 130px;
+  height: 130px;
+}
+
+.humidity__img {
+  width: 64px;
+  height: 64px;
+}
+
+.wind__img {
+  width: 64px;
+  height: 64px;
+}
+
+.error {
+  color: red;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  font-size: 30px;
+}
+
+.error_empty {
+  color: red;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  font-size: 30px;
+}
+
+.weather.active {
+  opacity: 1;
+  transition: opacity 0.5s 0.05s ease;
+}
+
+
+
