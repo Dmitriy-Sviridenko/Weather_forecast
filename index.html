@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-  />
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
 
@@ -15,38 +11,89 @@
 <body>
   <div class="container">
     <div class="search-box">
-      <i class="fa-solid fa-location-dot"></i>
+      <img src="img/location.svg" alt="" class="search-box__location">
       <input type="text" placeholder="Enter Location">
       <button>
-        <img class="search-box__img" src="img/seacrh.svg" alt="">
+        <img class="search-box__seacrh" src="img/seacrh.svg" alt="">
       </button>
     </div>
+
     <div class="error">
       <p>Invalid city name</p>
     </div>
     <div class="error_empty">
       <p>Please Enter Your City</p>
     </div>
+
+    
     <div class="weather">
-      <div class="weather-image">
-        <img class="weather__img" alt="">
+      <div class="form_radio_group">
+        <div class="form_radio_group-item form_radio_group--curent form_radio_group_active">
+          <input id="radio-1" type="radio" name="radio" value="1" checked>
+          <label for="radio-1">Current Weather</label>
+        </div>
+        <div class="form_radio_group-item form_radio_group--forecast">
+          <input id="radio-2" type="radio" name="radio" value="2">
+          <label for="radio-2">Forecast for 4 days</label>
+        </div>
       </div>
-      <h1 class="temp"></h1>
-      <p class="weather_disc">123</p>
-      <h2 class="city">Berlin</h2>
-      <div class="details">
-        <div class="col">
-          <img class="humidity__img" src="img/humidity.svg" alt="">
-          <div>
-            <p class="humidity"></p>
-            <p>Humidity</p>
+
+      <div class="current_weather">
+        <div class="current_weather-image">
+          <img class="current-weather__img" alt="">
+        </div>
+        <h1 class="current_temp"></h1>
+        <p class="current_weather_disc"></p>
+        <h2 class="city current_city"></h2>
+        <div class="current_details">
+          <div class="col">
+            <img class="humidity__img" src="img/humidity.svg" alt="">
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img class="wind__img" src="img/Wind.svg" alt="">
+            <div>
+              <p class="wind"></p>
+              <p>Wind speed</p>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <img class="wind__img" src="img/Wind.svg" alt="">
-          <div>
-            <p class="wind"></p>
-            <p>Wind speed</p>
+      </div>
+
+      <div class="forecast_weather">
+        <h2 class="city forecast_weather_city"></h2>
+
+        <div class="forecast_weather_col">
+          <div class="forecast_weather_item">
+            <img src="img/clear.svg" alt="" class="forecast_weather__img">
+            <p class="forecast_weather_disc"></p>
+            <p class="forecast_weather_temp"></p>
+            <p class="forecast_weather_day"></p>
+            <p class="forecast_weather_time">11-55</p>
+          </div>
+          <div class="forecast_weather_item">
+            <img src="img/clear.svg" alt="" class="forecast_weather__img">
+            <p class="forecast_weather_disc"></p>
+            <p class="forecast_weather_temp"></p>
+            <p class="forecast_weather_day"></p>
+            <p class="forecast_weather_time">11-55</p>
+          </div>
+          <div class="forecast_weather_item">
+            <img src="img/clear.svg" alt="" class="forecast_weather__img">
+            <p class="forecast_weather_disc"></p>
+            <p class="forecast_weather_temp"></p>
+            <p class="forecast_weather_day"></p>
+            <p class="forecast_weather_time">11-55</p>
+          </div>
+          <div class="forecast_weather_item">
+            <img src="img/clear.svg" alt="" class="forecast_weather__img">
+            <p class="forecast_weather_disc"></p>
+            <p class="forecast_weather_temp"></p>
+            <p class="forecast_weather_day"></p>
+            <p class="forecast_weather_time">11-55</p>
           </div>
         </div>
       </div>
